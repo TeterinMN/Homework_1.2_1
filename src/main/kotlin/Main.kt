@@ -6,17 +6,17 @@
  */
 
 fun main(){
-    val amount = 108_000
-    val amountRub = amount / 60
+    val amount = 108_000_00
+    val amountRub = amount / 100
     val percentMin = 2_100
-    val percentMinRub = percentMin / 60
+    val percentMinRub = percentMin / 100
     val result = amount * 0.75 / 100
-    val resultRub = result / 60
+    val resultRub = result / 100
     println()
-    println("Сумма перевода составляет $amount копеек ($amountRub рублей)")
+    println("Сумма перевода составляет $amount копеек ($amountRub руб.)")
     if (result <= percentMin) {
-        println("Взята минимальная комиссия  $percentMin копеек ($percentMinRub рублей) ")
+        println("Взята минимальная комиссия  $percentMin копеек ($percentMinRub руб.) ")
     } else {
-        println("Процент от суммы перевода составил $result копеек ($resultRub рублей)")
+        println("Процент от суммы перевода составил $result копеек ($resultRub руб.)")
     }
 }
