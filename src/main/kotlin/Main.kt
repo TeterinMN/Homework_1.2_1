@@ -6,8 +6,9 @@
  */
 
 fun main() {
-    val amount = 12_800_000
-    val percentMin = 3500
+    val amount = 548_000
+    val percentMin = 3_500
     val result = (amount * 0.75) / 100
-    if (result <= percentMin) println(percentMin) else println(result)
+    val resultFin: Double = if (result <= percentMin) percentMin.toDouble() else result
+    println(resultFin)
 }
